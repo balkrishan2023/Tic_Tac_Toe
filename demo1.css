@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+nav{
+    background-color: rgb(37, 2, 54);
+    height: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    padding: 2px 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+nav ul{
+    list-style: none;
+    
+}
+.gamecontainer{
+background-color: rgb(251, 253, 254);
+display: flex;
+justify-content: center;
+margin: 10px 10px;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    font-family: Arial, Helvetica, sans-serif;   
+    position: relative;
+}
+.line{
+    background-color: rgb(37 2 54);;
+    width: 0px;
+    height: 6px;
+    position: absolute;
+    border-radius: 100px;
+    transition: width 1s ease-in-out;
+}
+.box{
+    border: 1px solid black;
+    font-size: 5vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box:hover{
+   background-color: rgb(241, 241, 241);
+}
+.gameinfo {
+    padding: 20px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text{
+    font-size: 50px;
+}
+/* utility classes */
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+.image img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.info{
+    margin: 4px 0px;
+    font-size: 23px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#reset{
+    margin: 4px 6px;
+    padding: 5px 18px;
+    border-radius: 40px;
+    background-color: rgb(229, 229, 248);
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    /*font-weight: bold;
+*/  
+}
+@media only screen and (max-width: 800px)
+ {
+   .gamecontainer{
+    flex-wrap: wrap;
+    margin: 10px 10px;
+   } 
+.text{
+    font-size: 80px;
+}
+.info{
+    font-size: 40px;
+}
+#reset{
+    font-size: 30px;
+}
+}
